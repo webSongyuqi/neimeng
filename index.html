@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内蒙古项目</title>
+    <script type="text/javascript" src="./js/jquery-1.11.2.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="./css/global.css">
+</head>
+<body>
+    <div class="home" style="width: 10rem;height: 1rem;background-color: red;margin: 0 auto;">
+
+    </div>
+</body>
+<script type="text/javascript">
+    $(function () {
+        resizeLoad();
+        $(window).resize(function(){
+            resizeLoad();
+        });
+        function resizeLoad(){
+            //var width = $("body").get(0).offsetWidth;
+            var width = $(window).width();
+
+            //var fontSize =30* (width/720).toFixed(2);
+            var fontSize = (width/100).toFixed(2);
+
+            //if(width<720)
+            //{
+            $("html").css("font-size",""+fontSize+"px");
+            // }
+
+        }
+    });
+</script>
+</html>
