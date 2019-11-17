@@ -1,0 +1,33 @@
+.body{
+    width: 20rem;
+    background-color: #ffffff;
+    margin: 0 auto
+}
+
+/* 水平between */
+.flex-lr-between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/* 垂直between */
+.flex-tb-between{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* 垂直左右居中 */
+.flex-column-lf-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 垂直上下左右居中 */
+.flex-column-tb-lf-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

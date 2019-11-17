@@ -2,14 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
     <title>内蒙古项目</title>
     <script type="text/javascript" src="./js/jquery-1.11.2.js"></script>
 
     <link type="text/css" rel="stylesheet" href="./css/global.css">
+    <link type="text/css" rel="stylesheet" href="./css/bace.css">
 </head>
 <body>
-    <div class="home" style="width: 10rem;height: 1rem;background-color: red;margin: 0 auto;">
-
+<style>
+    /* header开始 */
+    .content{width:15rem;}
+    .logo-wrapper{height: 1rem;background: url("./images/logo_bg.png") top center no-repeat;}
+    .logo{width: 5.01rem;height: .51rem;background: url("./images/logo.png") top center no-repeat;background-size: cover;}
+    .tel{width: 2rem;height: .37rem;margin-right: .23rem;}
+    .tel-num{width: 1.6rem;height: .37rem;font-size: .14rem;color: #000;line-height: .14rem;}
+    .tel-num .num{font-size: .24rem;line-height: .16rem;}
+    .tel-icon{width: .37rem;height: .37rem;background: url("./images/icon_tel.png") top center no-repeat;background-size: cover;}
+    /* header结束 */
+</style>
+    <div class="body flex-column-lf-center">
+        <!-- header开始 -->
+        <div class="header">
+            <div class="logo-wrapper flex-column-tb-lf-center">
+                <div class="content  flex-lr-between">
+                    <div class="logo"></div>
+                    <div class="tel flex-lr-between">
+                        <div class="tel-icon"></div>
+                        <div class="tel-num flex-tb-between">
+                            <div>服务热线：</div>
+                            <div class="num">0470-7420025</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header结束 -->
     </div>
 </body>
 <script type="text/javascript">
@@ -23,7 +53,7 @@
             var width = $(window).width();
 
             //var fontSize =30* (width/720).toFixed(2);
-            var fontSize = (width/100).toFixed(2);
+            var fontSize = (width/15).toFixed(2);
 
             //if(width<720)
             //{
