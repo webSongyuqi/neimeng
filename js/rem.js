@@ -1,4 +1,5 @@
 $(function () {
+    debugger
     resizeLoad();
     $(window).resize(function(){
         resizeLoad();
@@ -9,6 +10,7 @@ $(function () {
 
         //var fontSize =30* (width/720).toFixed(2);
         var fontSize =(width/100).toFixed(2);
+        debugger
 
         //if(width<720)
         //{

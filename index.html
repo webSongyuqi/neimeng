@@ -10,20 +10,10 @@
 
     <link type="text/css" rel="stylesheet" href="./css/global.css">
     <link type="text/css" rel="stylesheet" href="./css/bace.css">
+    <link type="text/css" rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-<style>
-    /* header开始 */
-    .content{width:15rem;}
-    .logo-wrapper{height: 1rem;background: url("./images/logo_bg.png") top center no-repeat;}
-    .logo{width: 5.01rem;height: .51rem;background: url("./images/logo.png") top center no-repeat;background-size: cover;}
-    .tel{width: 2rem;height: .37rem;margin-right: .23rem;}
-    .tel-num{width: 1.6rem;height: .37rem;font-size: .14rem;color: #000;line-height: .14rem;}
-    .tel-num .num{font-size: .24rem;line-height: .16rem;}
-    .tel-icon{width: .37rem;height: .37rem;background: url("./images/icon_tel.png") top center no-repeat;background-size: cover;}
-    /* header结束 */
-</style>
-    <div class="body flex-column-lf-center">
+    <div class="body">
         <!-- header开始 -->
         <div class="header">
             <div class="logo-wrapper flex-column-tb-lf-center">
@@ -38,9 +28,66 @@
                     </div>
                 </div>
             </div>
-            <div class="banner"></div>
+            <div class="banner-wrapper">
+                <div class="nav-wrapper flex-column-lf-center">
+                    <div class="content flex-row-start">
+                        <ul class="flex-row-start">
+                            <div class="biao"></div>
+                            <a href="#"><li>首页</li></a>
+                            <div class="biao"></div>
+                            <a href="#"><li>关于我们</li></a>
+                            <div class="biao"></div>
+                            <a href="#"><li>新闻资讯</li></a>
+                            <div class="biao"></div>
+                            <a href="#"><li>专业服务</li></a>
+                            <div class="biao"></div>
+                            <a href="#"><li>卓越业绩</li></a>
+                            <div class="biao"></div>
+                            <a href="#"><li>技术支撑</li></a>
+                            <div class="biao"></div>
+                            <a href="#"><li>招贤纳士</li></a>
+                            <div class="biao"></div>
+                            <a href="#"><li>联系我们</li></a>
+                            <div class="biao"></div>
+                        </ul>
+                        <div class="search"></div>
+                    </div>
+                </div>
+                <div class="banner"></div>
+            </div>
         </div>
         <!-- header结束 -->
+
+        <!-- 企业要闻开始 -->
+        <div class="news-wrapper flex-column-tb-lf-center">
+            <div class="content flex-lr-between">
+                <div class="left flex-row-start">
+                    <div class="img-wrapper flex-column-tb-lf-center">
+                        <div class="blue"></div>
+                        <div class="img" style="background-image: url('./images/banner1.jpg');"></div>
+                    </div>
+                    <div class="news">
+                        <div class="title"></div>
+                        <div class="news-name">筑业公司2018年ISO9000三体系外部监督审核圆满结束 </div>
+                        <div class="news-date">2019-10-23</div>
+                        <div class="news-text">按照认证要求，中国船级社认证公司审核组于2018年11月17日起对筑业公司三体系管理系统进行了年度监督审核三体系管理系统进行了年度监督审核三体系管理系统进行了年度监督审核...</div>
+                        <div class="buttons flex-lr-between">
+                            <div class="prev img-cc"></div>
+                            <div class="next img-cc click"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right img-cc flex-row-center">
+                    <ul>
+                        <li>优秀勘察设计企业</li>
+                        <li>双爱双评先进企业</li>
+                        <li>2010年度非公有制经济发展先进单位</li>
+                        <li>2010年度社区建设特殊贡献奖</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 企业要闻结束 -->
     </div>
 </body>
 <script type="text/javascript">
@@ -54,14 +101,25 @@
             var width = $(window).width();
 
             //var fontSize =30* (width/720).toFixed(2);
-            var fontSize = (width/15).toFixed(2);
+            var fontSize = (width/20).toFixed(2);
 
             //if(width<720)
             //{
             $("html").css("font-size",""+fontSize+"px");
             // }
 
-        }
+        };
+        $('.nav-wrapper a').hover(function(){
+            $(this).next().addClass('hover');
+            $(this).prev().addClass('hover');
+        },function(){
+            $(this).next().removeClass('hover');
+            $(this).prev().removeClass('hover');
+        });
+        $('.buttons div').click(function(){
+            $(this).addClass('click');
+            $(this).siblings().removeClass('click');
+        })
     });
 </script>
 </html>

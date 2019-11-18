@@ -1,7 +1,31 @@
+html{
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .body{
     width: 20rem;
     background-color: #ffffff;
     margin: 0 auto
+}
+
+.img-cc{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* 水平start */
+.flex-row-start{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* 水平左右居中 */
+.flex-row-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 /* 水平between */
@@ -21,7 +45,7 @@
 .flex-column-lf-center{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 /* 垂直上下左右居中 */
