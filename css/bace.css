@@ -59,6 +59,13 @@ html{
     flex-direction: column;
     align-items: center;
 }
+/* 垂直上下居中 */
+.flex-column-tb-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 
 /* 垂直上下左右居中 */
 .flex-column-tb-lf-center{
