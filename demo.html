@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <title>内蒙古项目</title>
+    <script type="text/javascript" src="./js/jquery-1.11.2.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="./css/global.css">
+    <link type="text/css" rel="stylesheet" href="./css/bace.css">
+    <link type="text/css" rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <style>
+        .header .banner-wrapper .banner{width: 100%;height: 3.77rem;background-image: url('./images/about/about_04.png');background-size: cover;background-position: center;}
+    </style>
+    <div class="body">
+        <!-- header开始 -->
+        <div class="header">
+            <div class="logo-wrapper flex-column-tb-lf-center">
+                <div class="content  flex-lr-between">
+                    <div class="logo"></div>
+                    <div class="tel flex-lr-between">
+                        <div class="tel-icon"></div>
+                        <div class="tel-num flex-tb-between">
+                            <div>服务热线：</div>
+                            <div class="num">0470-7420025</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-wrapper">
+                <div class="nav-wrapper flex-column-lf-center">
+                    <div class="content flex-row-start">
+                        <ul class="flex-row-start">
+                            <div class="biao"></div>
+                            <a href="#"><li>首页</li></a>
+                            <div class="biao"></div>
+                            <a href="#"><li>关于我们</li></a>
+                            <div class="biao"></div>
+                            <a href="#"><li>新闻资讯</li></a>
+                            <div class="biao"></div>
+                            <a href="#"><li>专业服务</li></a>
+                            <div class="biao"></div>
+                            <a href="#"><li>卓越业绩</li></a>
+                            <div class="biao"></div>
+                            <a href="#"><li>技术支撑</li></a>
+                            <div class="biao"></div>
+                            <a href="#"><li>招贤纳士</li></a>
+                            <div class="biao"></div>
+                            <a href="#"><li>联系我们</li></a>
+                            <div class="biao"></div>
+                        </ul>
+                        <div class="search flex-row-start img-cc">
+                            <input type="text">
+                            <div class="img-cc"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner"></div>
+            </div>
+        </div>
+        <!-- header结束 -->
+
+        <!-- 企业要闻开始 -->
+        <div class="part1 flex-column-lf-center">
+            <div class="content flex-lr-between">
+                
+            </div>
+        </div>
+        <!-- 企业要闻结束 -->
+
+        <!-- footer开始 -->
+        <div class="footer flex-column-lf-center font14 img-cc">
+            <div class="content flex-tb-between">
+                <div class="top-wrapper flex-row-start">
+                    <div class="detail">
+                        <div class="tel flex-lr-between">
+                            <div class="tel-icon"></div>
+                            <div class="tel-num flex-tb-between">
+                                <div>服务热线：</div>
+                                <div class="num c-white">0470-7420025</div>
+                            </div>
+                        </div>
+                        <div class="mail">E-mail：nmgzy@nmgzy.com.cn</div>
+                        <div class="address">地址：内蒙古呼伦贝尔市牙克石市林城路73号</div>
+                        <div class="code img-cc" style="background-image: url('./images/footer_code.png');"></div>
+                    </div>
+                    <ul class="list-wrapper">
+                        <a href=""><li class="c-white">关于我们</li></a>
+                        <a href=""><li>公司简介</li></a>
+                        <a href=""><li>组织结构</li></a>
+                        <a href=""><li>大事记</li></a>
+                        <a href=""><li>企业文化</li></a>
+                        <a href=""><li>企业荣誉</li></a>
+                    </ul>
+                    <ul class="list-wrapper">
+                        <a href=""><li class="c-white">新闻资讯</li></a>
+                        <a href=""><li>企业要闻</li></a>
+                        <a href=""><li>党工团工作</li></a>
+                        <a href=""><li>员工天地</li></a>
+                    </ul>
+                    <ul class="list-wrapper">
+                        <a href=""><li class="c-white">专业服务</li></a>
+                        <a href=""><li>工程咨询</li></a>
+                        <a href=""><li>地质勘察</li></a>
+                        <a href=""><li>公路工程</li></a>
+                        <a href=""><li>工业与民用建筑</li></a>
+                        <a href=""><li>装饰装修工程</li></a>
+                        <a href=""><li>绿化工程</li></a>
+                    </ul>
+                    <ul class="list-wrapper">
+                        <a href=""><li class="c-white">技术支撑</li></a>
+                        <a href=""><li>资质资信</li></a>
+                        <a href=""><li>标准规范</li></a>
+                        <a href=""><li>冻土勘察技术研究中心</li></a>
+                    </ul>
+                </div>
+                <div class="bottom-wrapper flex-lr-between">
+                    <div>内蒙古筑业工程勘察设计有限公司 版权所有   蒙ICP备11002098号   蒙公网安备15078202000071号</div>
+                    <div>博乐虎提供网站建设</div>
+                </div>
+            </div>
+        </div>
+        <!-- footer结束 -->
+    </div>
+</body>
+<script type="text/javascript">
+    $(function () {
+        resizeLoad();
+        $(window).resize(function(){
+            resizeLoad();
+        });
+        function resizeLoad(){
+            //var width = $("body").get(0).offsetWidth;
+            var width = $(window).width();
+
+            //var fontSize =30* (width/720).toFixed(2);
+            var fontSize = (width/20).toFixed(2);
+
+            //if(width<720)
+            //{
+            $("html").css("font-size",""+fontSize+"px");
+            // }
+
+        };
+        $('.nav-wrapper a').hover(function(){
+            $(this).next().addClass('hover');
+            $(this).prev().addClass('hover');
+        },function(){
+            $(this).next().removeClass('hover');
+            $(this).prev().removeClass('hover');
+        });
+        $('.buttons div').click(function(){
+            $(this).addClass('click');
+            $(this).siblings().removeClass('click');
+        });
+    });
+</script>
+</html>

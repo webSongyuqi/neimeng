@@ -29,7 +29,7 @@
 .news-wrapper .left .img-wrapper .img{width: 4.65rem;height: 3.53rem;background-size: cover;background-position: center;position: relative;z-index: 2;}
 .news-wrapper .left .news{width: 4.9rem;height: 3.38rem;margin-left: .16rem;padding-top: .15rem;}
 .news-wrapper .left .news .title{width: 2.68rem;height: .23rem;margin-left: -.66rem;background-image: url('./../images/title_news.png');background-size: cover;background-position: center;position: relative;z-index: 3;}
-.news-wrapper .left .news .news-name{line-height: .18rem;margin-top: .73rem;font-size: .18rem;color: #292929;font-weight: bold;}
+.news-wrapper .left .news .news-name{line-height: .18rem;margin-top: .73rem;font-size: .18rem;color: #292929;font-weight: bold;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .news-wrapper .left .news .news-date{line-height: .14rem;margin-top: .22rem;font-size: .14rem;color: #9a9a9a;}
 .news-wrapper .left .news .news-text{width:4.75rem;line-height: 2;margin-top: .37rem;font-size: .14rem;color: #858585;overflow: hidden;-webkit-box-orient: vertical;word-wrap: break-word;white-space: pre-wrap;display: -webkit-box;text-overflow: ellipsis;-webkit-line-clamp: 2;}
 .news-wrapper .left .buttons{width:.83rem;height:.36rem;margin-top: .75rem;}
@@ -38,7 +38,7 @@
 .news-wrapper .left .next.click{background-image: url('./../images/icon_c_next.png');transform: rotate(0);}
 .news-wrapper .left .next{width:.36rem;height:.36rem;background-image: url('./../images/icon_c_prev.png');transform: rotate(180deg);background-size: 100%;cursor: pointer;}
 .news-wrapper .right{width:4.01rem;height:4.27rem;background-image: url('./../images/honor.png');padding-top: 1.4rem;box-sizing: border-box;}
-.news-wrapper .right li{width:3rem;height:.56rem;line-height:.56rem;border-bottom: 1px solid #e1e1e1;font-size: .14rem;color: #000000;}
+.news-wrapper .right li{width:3rem;height:.56rem;line-height:.56rem;border-bottom: 1px solid #e1e1e1;font-size: .14rem;color: #000000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 /* 企业要闻结束 */
 
 /* 专业服务开始 */
@@ -81,12 +81,12 @@
 .performance-wrapper{height: 5.93rem;padding-top: .1rem;box-sizing: border-box;background-color: #eef6fb;}
 .performance-wrapper .title-wrapper{height: 1.51rem;}
 .performance-wrapper .title-wrapper .title{width: 2.71rem;height: .24rem;background-image: url('./../images/title_performance.png');}
-.performance-wrapper .title-wrapper ul{width: 5.73rem;}
+.performance-wrapper .title-wrapper ul{width: 6.73rem;}
 .performance-wrapper .title-wrapper ul li{display: inline-block;font-size: .14rem;}
 .performance-wrapper .info-wrapper .info{width: 3.6rem;}
 .performance-wrapper .info-wrapper .info .img-cc{width: 3.6rem;height: 2.48rem;background-image: url('./../images/banner1.jpg');background-size: cover;border-radius: .1rem .1rem 0 0;}
 .performance-wrapper .info-wrapper .info .info-text{color: #919191;height: 1.17rem;background-color: #ffffff;padding-top: .3rem;box-sizing: border-box;}
-.performance-wrapper .info-wrapper .info .info-text .font14{margin-top: .23rem;}
+.performance-wrapper .info-wrapper .info .info-text .font14{width: 100%;margin-top: .23rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 /* 卓越业绩结束 */
 
 /* 党工团工作开始 */
@@ -101,6 +101,7 @@
 .work-wrapper .work .info-wrapper .info .date{color: #a8a8a8;margin-top: .35rem;line-height: .2rem;}
 .work-wrapper .work-list li{width: 4.65rem;height: .16rem;margin-bottom: .2rem;}
 .work-wrapper .work-list li .dian{width: .04rem;height: .04rem;margin-right: .14rem;border: 1px solid #000;border-radius: .04rem;background-color: #000;}
+.work-wrapper .work-list li .text{width: 4.5rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .work-wrapper .guifan{width: 4.99rem;height: 4.39rem;padding: .38rem .4rem 0;box-sizing: border-box;background-image: url('./../images/guifan_bg.jpg');background-size: cover;}
 .work-wrapper .guifan .title{width: 2.71rem;height: .24rem;background-image: url('./../images/title_guifan.png');}
 .work-wrapper .guifan .list{width: 4.25rem;margin-top: .24rem;}
@@ -129,6 +130,7 @@
 .footer .top-wrapper .mail{line-height: .16rem;margin: .3rem 0 .15rem;}
 .footer .top-wrapper .code{width: 1.28rem;height: 1.28rem;margin: .35rem 0 0 0;}
 .footer .top-wrapper .list-wrapper{width: 2.46rem;height: 2.8rem;padding-left: .9rem;box-sizing: border-box;border-left: 1px solid #585858;}
+.footer .top-wrapper .list-wrapper:last-child{width: 3.3rem;}
 .footer .top-wrapper .list-wrapper li{line-height: .16rem;margin-bottom: .2rem;color:#bdbdbd;}
 .footer .top-wrapper .list-wrapper li.c-white{margin-bottom: .3rem;}
 
@@ -136,3 +138,7 @@
 .footer .bottom-wrapper div{line-height: .65rem;}
 
 /* footer结束 */
+
+/* about开始 */
+
+/* about结束 */
