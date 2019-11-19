@@ -21,8 +21,11 @@ html{
 .font16{
     font-size: .16rem !important;
 }
+.font28{
+    font-size: .28rem !important;
+}
 .img-cc{
-    background-size: 100%;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
